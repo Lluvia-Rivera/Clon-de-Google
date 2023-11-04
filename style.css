@@ -1,0 +1,134 @@
+body{
+    margin:0;
+    padding: 0;
+    font-size: 15px; /*Tamaño de letra*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{/*--Enlaces*/
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header{ /*cabecera*/
+    width: 100%;
+    height: 80px;
+}
+
+header nav{ /*Barra de navegación*/
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .Sección-inicial{
+    width: 275px;
+    height: auto;
+    display: flex; /*hacer elementos flexibles*/
+    list-style: none; /*quitar decoracion de lista*/
+    align-items: center;
+}
+
+nav .Sección-inicial a{ /*espacio hacia la derecha y color negro*/
+    margin-right: 15px;
+    color: black;
+}
+
+#perfil{ 
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+main{
+    margin-top: 25px; /*espaciado exterior de arriba*/
+    text-align: center;
+}
+
+main .Logo-Principal{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px; /*Espaciado exterior de abajo*/
+}
+
+main .Logo-Principal img{
+    width: 400px; /*Tamaño de la imagen*/
+}
+
+main .Entrada-Principal{
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .Contenedor-de-entrada-principal{/*Cajita del buscador*/
+    width: 600px;
+    border-radius: 100px;
+    border: 1px solid rgb(116, 112, 112);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .Entrada-Principal input{
+    width: 490px;
+    height: 25px;
+    border: none;
+    outline: none;
+}
+
+main .Botones-principales{
+    width: 530px;
+    margin: 0 auto; /*centrar los botones*/
+}
+
+main .Botones-principales div{
+    display: inline-block;
+}
+
+main .Botones-principales button{
+    height: 30px;
+    background-color: rgb(187, 187, 187);
+    border: 0;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 0 10px; /*Espacio interior*/
+    margin-right: 25px;
+}
+/*Animacion de hover, transicion*/
+main .Botones-principales button:hover{
+    border: 2px solid rgb(158, 204, 248);
+    box-shadow: 0 1px rgb(59, 59, 59); /*Efecto de sobra*/
+}
+
+footer {
+    width: 100%;
+    height: 35px; /*altura del footer*/
+    position: absolute;
+    bottom: 0; /*Lo colaca en la parte inferior*/
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*divide en 2 facciones las listar desordenadas*/
+    align-items: center;
+    font-size: 14px;
+    background-color: rgb(189, 185, 185);
+    border-top: 1px solid rgb(148, 148, 148); /*Borde superior*/
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none; /*quitar puntitos*/
+    display: flex;
+    padding-left: 0;
+}
+
+footer .Footer-de-la-izquierda {
+    justify-self: left;
+}
+
+footer .Footer-de-la-derecha{
+    justify-self: right ;
+}
+
+footer ul li a{ /*espacio entre los enlaces*/
+    margin: 10px;
+    color: rgb(119, 114, 114);
+}
